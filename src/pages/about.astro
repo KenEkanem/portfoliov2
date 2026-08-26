@@ -8,7 +8,7 @@ if (!about) throw new Error('About content was not found at src/data/blog/about.
 const content = await marked.parse(about.data.content);
 ---
 
-<BaseLayout title="About — Kennedy Ekanem" description={about.data.description}>
+<BaseLayout title="About: Kennedy Ekanem" description={about.data.description}>
   <article class="about-page">
     <div class="about-shell">
       <header class="about-hero">
