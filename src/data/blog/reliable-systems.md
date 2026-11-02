@@ -18,11 +18,15 @@ Every service makes an implicit promise to its users. The useful question is not
 
 An availability graph can be green while checkout is impossible. A queue can be healthy while confirmation emails arrive three hours late. Measure the promise before you measure the machinery.
 
+![Our status page says 100% operational. Our support inbox disagrees](/images/blog/reliability-status-vs-inbox.webp)
+
 ## Make failure easy to understand
 
 Good observability reduces the distance between a symptom and an explanation. Logs tell us what happened, metrics show the shape of the problem, and traces connect the path between services. None of them is the goal. Understanding is the goal.
 
 The most useful dashboard is the one a tired engineer can read at 2 AM without reconstructing the entire architecture in their head.
+
+![Levels of observability, ranked by how awake you need to be](/images/blog/reliability-2am-levels.webp)
 
 ## Reliability creates trust
 
