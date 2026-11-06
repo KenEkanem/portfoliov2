@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="XplicitDesign: Kennedy Ekanem"
+  description="A portfolio and services website for XplicitDesign, the creative studio of graphic designer Okem Precious."
+>
+  <article class="project-page">
+    <a class="back-link" href="/#work">← Back to work</a>
+
+    <header class="project-header">
+      <p class="project-meta">Web design &amp; development · Creative portfolio</p>
+      <h1>XplicitDesign</h1>
+      <p class="project-intro">
+        A one-page portfolio and services site for XplicitDesign, the brand identity and
+        graphic design studio of Okem Precious: built to turn a body of creative work
+        into new client enquiries.
+      </p>
+    </header>
+
+    <figure class="project-image">
+      <a href="https://xplicitdesign.kennedyekanem.tech" target="_blank" rel="noopener">
+        <img src="/images/xplicitdesign.png" alt="XplicitDesign homepage hero introducing Okem Precious, Graphic Designer" />
+      </a>
+      <figcaption>The XplicitDesign landing section. <a href="https://xplicitdesign.kennedyekanem.tech" target="_blank" rel="noopener">Visit the live site ↗</a></figcaption>
+    </figure>
+
+    <section class="project-copy">
+      <h2>Overview</h2>
+      <p>
+        XplicitDesign, "Ideas to identity," creates logos, brand identities, packaging,
+        event and conference designs, social media graphics, and book covers for businesses,
+        startups, ministries, and creatives.
+      </p>
+      <p>
+        The site brings the designer's story, résumé, brand philosophy, and portfolio
+        together in a single scrolling experience, ending with clear ways to get in touch.
+      </p>
+
+      <h2>Key features</h2>
+      <ul>
+        <li><strong>Single-page narrative:</strong> Home, About, Brand, Portfolio, and Contact sections with anchor navigation and scroll prompts between them.</li>
+        <li><strong>Categorized portfolio:</strong> galleries for visual identity, logo marks, social media, book covers, events, packaging, and stationery, each project labelled with client and year.</li>
+        <li><strong>Lightbox viewer:</strong> zoom, keyboard browsing with arrow keys, and Esc to close, plus "View all" expanders for larger projects.</li>
+        <li><strong>Brand story:</strong> the studio's purpose, services, target clients, and core values presented alongside the work.</li>
+        <li><strong>Direct contact:</strong> WhatsApp QR, click-to-call, email, Behance, and Instagram links.</li>
+        <li><strong>Performance:</strong> a static Astro build with optimized WebP images keeps an image-heavy portfolio fast.</li>
+      </ul>
+
+      <dl class="details">
+        <div><dt>Role</dt><dd>Web design &amp; development</dd></div>
+        <div><dt>Built for</dt><dd>Okem Precious (XplicitDesign)</dd></div>
+        <div><dt>Year</dt><dd>2026</dd></div>
+        <div><dt>Technology</dt><dd>Astro, WebP image optimization, Cloudflare</dd></div>
+        <div><dt>Live site</dt><dd><a href="https://xplicitdesign.kennedyekanem.tech" target="_blank" rel="noopener">xplicitdesign.kennedyekanem.tech</a></dd></div>
+      </dl>
+    </section>
+
+    <nav class="project-nav" aria-label="Project navigation">
+      <a href="/#work">All projects</a>
+      <a href="/projects/wegatherevents">Next: WeGatherEvents →</a>
+    </nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .project-page{width:min(100% - 40px,680px);margin:0 auto;padding:64px 0 100px}.project-header{margin-top:72px;padding-bottom:28px;border-bottom:1px solid var(--line)}.project-meta{margin:0 0 4px;color:var(--muted);font-size:13px}.project-header h1{margin:0;font:clamp(34px,5vw,46px)/1.15 var(--serif);letter-spacing:-.035em}.project-intro{max-width:620px;margin:24px 0 0;color:var(--muted);font-size:17px;line-height:1.7}.project-image{width:100%;margin:38px 0 0;padding:24px;border:1px solid var(--img-border);border-radius:10px;background:var(--img-bg)}.project-image img{display:block;width:100%;height:auto;border-radius:4px}.project-image figcaption{margin:12px 0 -12px;color:var(--muted);font-size:11px}.project-copy{margin-top:58px;font-size:17px;line-height:1.8}.project-copy h2{margin:48px 0 10px;font:26px/1.3 var(--serif);letter-spacing:-.02em}.project-copy h2:first-child{margin-top:0}.project-copy p{margin:0 0 20px;color:var(--muted)}.project-copy ul{margin:8px 0 0;padding-left:22px;color:var(--muted)}.project-copy li{margin:0 0 16px}.project-copy strong{color:var(--text)}.project-copy code{font-size:.82em}.details{margin:50px 0 0;border-top:1px solid var(--line)}.details div{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:13px 0;border-bottom:1px solid var(--line)}.details dt{color:var(--muted);font:10px Mono;text-transform:uppercase;letter-spacing:.1em}.details dd{margin:0;font-size:13px}.project-nav{display:flex;justify-content:space-between;margin-top:68px;padding-top:20px;border-top:1px solid var(--line);font-size:13px}.project-nav a:hover{text-decoration:underline}
+  @media(max-width:600px){.project-page{padding-top:38px}.project-header{margin-top:48px}.project-header h1{font-size:32px}.project-intro{font-size:15px}.project-image{padding:12px}.project-image figcaption{margin-bottom:-4px}.project-copy{margin-top:44px;font-size:16px}.details div{grid-template-columns:100px 1fr}}
+</style>

@@ -18,8 +18,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </header>
 
     <figure class="project-image">
-      <img src="/images/landestcropped.png" alt="Full Landest platform website" />
-      <figcaption>The Landest property technology platform.</figcaption>
+      <a href="https://www.landest.co/" target="_blank" rel="noopener">
+        <img src="/images/landestcropped.png" alt="Full Landest platform website" />
+      </a>
+      <figcaption>The Landest property technology platform. <a href="https://www.landest.co/" target="_blank" rel="noopener">Visit the live site ↗</a></figcaption>
     </figure>
 
     <section class="project-copy">
@@ -46,12 +48,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div><dt>Platform</dt><dd>Amazon Web Services</dd></div>
         <div><dt>Services</dt><dd>API, gateway, bank proxy, and email</dd></div>
         <div><dt>Observability</dt><dd>OpenTelemetry traces, metrics, and logs</dd></div>
+        <div><dt>Live site</dt><dd><a href="https://www.landest.co/" target="_blank" rel="noopener">landest.co</a></dd></div>
       </dl>
     </section>
 
     <nav class="project-nav" aria-label="Project navigation">
       <a href="/#work">All projects</a>
-      <a href="/projects/wegatherevents">Next: WeGatherEvents →</a>
+      <a href="/projects/xplicitdesign">Next: XplicitDesign →</a>
     </nav>
   </article>
 </BaseLayout>
@@ -61,7 +64,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   @media(max-width:600px){.project-page{padding-top:38px}.project-header{margin-top:48px}.project-header h1{font-size:32px}.project-intro{font-size:15px}.project-image img{padding:8px}.project-copy{margin-top:44px;font-size:16px}.details div{grid-template-columns:100px 1fr}}
 </style>
 <style>
-  figure.project-image{width:100%!important;max-width:100%;margin:38px 0 0!important;padding:24px;transform:none!important;aspect-ratio:auto;overflow:visible;background:var(--soft);border:1px solid var(--line);border-radius:10px}
+  figure.project-image{width:100%!important;max-width:100%;margin:38px 0 0!important;padding:24px;transform:none!important;aspect-ratio:auto;overflow:visible;background:var(--img-bg);border:1px solid var(--img-border);border-radius:10px}
   figure.project-image img{width:100%;height:auto!important;padding:0;border:0;border-radius:4px;object-fit:contain!important;background:transparent}
   figure.project-image figcaption{margin:12px 0 -12px}
   @media(max-width:600px){figure.project-image{padding:12px}figure.project-image figcaption{margin-bottom:-4px}}

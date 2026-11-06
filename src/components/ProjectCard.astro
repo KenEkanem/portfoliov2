@@ -1,9 +1,10 @@
 ---
-const { number, title, description, role, builtFor, year, tags, href = '#' } = Astro.props;
+const { number, title, description, role, builtFor, year, tags, href = '#', image } = Astro.props;
 ---
 <article class="project-card">
   <a class="project-link" href={href} aria-label={`View ${title} case study`}>
     <span class="project-number">{number}</span>
+    {image && <div class="project-thumb"><img src={image} alt="" width="240" height="150" loading="lazy" decoding="async" /></div>}
     <div class="project-copy">
       <div class="project-title-row"><h3>{title}</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
       <p>{description}</p>
